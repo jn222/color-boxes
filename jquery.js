@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$('body').append('<div class="holder"></div>');
+	for(i=0; i<8; i++){
+		$('.holder').append('<div class="box-holder"></div>');
+	}
+	for(j=0; j<10; j++){
+		$('.box-holder').append('<div class="box"></div>');
+	}
+	$('body').append('<button type="button">New Grid</button>');
+	$('button').click(function(){
+		$('.box').css("background-color","white");
+	});
+	$('.box').hover(function(){
+			$(this).css("background-color","blue");
+	})
+});
